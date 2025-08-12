@@ -28,11 +28,11 @@ const caseResults = [
 ];
 
 const socialLinks = [
-  { name: "VK", url: "https://vk.com/neuro_progressor", icon: "ExternalLink" },
-  { name: "Dzen", url: "https://dzen.ru/neuro_progressor", icon: "ExternalLink" },
-  { name: "RuTube", url: "https://rutube.ru/channel/67537775/", icon: "Video" },
-  { name: "TikTok", url: "https://www.tiktok.com/@neuro_progressor_hr", icon: "Music" },
-  { name: "YouTube", url: "https://www.youtube.com/channel/UCBNdES0BBDkL-esp18t9AgQ", icon: "Play" },
+  { name: "VK", url: "https://vk.com/neuro_progressor", icon: "ExternalLink", logo: "🟦" },
+  { name: "Дзен", url: "https://dzen.ru/neuro_progressor", icon: "ExternalLink", logo: "🟡" },
+  { name: "RuTube", url: "https://rutube.ru/channel/67537775/", icon: "Video", logo: "📺" },
+  { name: "TikTok", url: "https://www.tiktok.com/@neuro_progressor_hr", icon: "Music", logo: "🎵" },
+  { name: "YouTube", url: "https://www.youtube.com/channel/UCBNdES0BBDkL-esp18t9AgQ", icon: "Play", logo: "🔴" },
 ];
 
 export default function Index() {
@@ -61,7 +61,7 @@ export default function Index() {
               </p>
               <Button 
                 size="lg" 
-                className="text-lg px-8 py-4 bg-gradient-primary hover:opacity-90 border border-primary/20 shadow-2xl shadow-primary/25"
+                className="text-lg px-8 py-4 bg-gradient-primary hover:opacity-90 border border-primary/20 glow-effect transition-all duration-300"
                 onClick={() => window.open('https://t.me/valeryka76', '_blank')}
               >
                 <Icon name="Zap" className="mr-2" />
@@ -331,6 +331,7 @@ export default function Index() {
           
           <div className="max-w-4xl mx-auto space-y-4">
             {[
+              "Есть входящий поток лидов (первичных клиентов)",
               "Оборот от 500 000 ₽/мес, от 120 клиентов/мес",
               "В общении с клиентами Telegram уже используется (или планировался)",
               "Вы понимаете, что бот не будет писать первым",
@@ -340,7 +341,7 @@ export default function Index() {
               "Вы способны предоставить структурированный отчет за период тестирования",
               "Предпочтительные сферы: малый и средний бизнес, стоматология, автосервис, ремонт и стройка, салоны красоты, онлайн-услуги"
             ].map((condition, index) => (
-              <Card key={index} className="bg-card/30 backdrop-blur-sm border border-border/50">
+              <Card key={index} className="bg-card/30 backdrop-blur-sm border border-border/50 card-glow transition-all duration-300">
                 <CardContent className="p-4">
                   <div className="flex items-start gap-3">
                     <Icon name="CheckCircle" className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
@@ -432,9 +433,10 @@ export default function Index() {
                   key={index}
                   variant="ghost"
                   size="sm"
-                  className="hover:text-primary"
+                  className="hover:text-primary card-glow transition-all duration-300"
                   onClick={() => window.open(social.url, '_blank')}
                 >
+                  <span className="mr-2 text-lg">{social.logo}</span>
                   <Icon name={social.icon} className="mr-2 w-4 h-4" />
                   {social.name}
                 </Button>
