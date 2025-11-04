@@ -255,7 +255,7 @@ export default function Index() {
                     <div className="flex items-start gap-3">
                       <Icon name="DollarSign" className="w-5 h-5 text-primary mt-1" />
                       <p className="text-sm">
-                        <strong>Цена:</strong> Сейчас от 30 000 ₽, потом будет 90 000+ ₽
+                        <strong>Цена:</strong> 50 000 ₽ за весь проект разработки
                       </p>
                     </div>
                   </div>
