@@ -370,14 +370,14 @@ export default function Index() {
                       Спецпредложение
                     </Badge>
                     <p className="text-4xl md:text-6xl font-heading font-bold text-primary">
-                      от 30 000 ₽
+                      50 000 ₽
                     </p>
                     <p className="text-lg text-muted-foreground">за весь проект</p>
                   </div>
                   
                   <div className="border-t border-primary/20 pt-6">
                     <p className="text-lg mb-2">Обычная цена: <span className="line-through text-muted-foreground">90 000–150 000 ₽</span></p>
-                    <p className="text-2xl font-heading font-bold text-accent">Только 3 места</p>
+                    <p className="text-2xl font-heading font-bold text-accent">Осталось только 2 места</p>
                   </div>
                 </div>
               </CardContent>
