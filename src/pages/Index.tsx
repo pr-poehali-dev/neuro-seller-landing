@@ -369,7 +369,7 @@ export default function Index() {
                       Спецпредложение
                     </Badge>
                     <p className="text-4xl md:text-6xl font-heading font-bold text-primary">
-                      50 000 ₽
+                      75 000 ₽
                     </p>
                     <p className="text-lg text-muted-foreground">за весь проект</p>
                   </div>
